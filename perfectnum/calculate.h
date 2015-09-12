@@ -1,0 +1,3 @@
+
+
+int calc(int number);
