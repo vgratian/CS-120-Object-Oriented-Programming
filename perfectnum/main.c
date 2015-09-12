@@ -5,7 +5,7 @@
 
 int main() {
 int number;
-short int answer;
+int answer;
 
 //if (testconst == 5) {printf ("aaa");}
 
