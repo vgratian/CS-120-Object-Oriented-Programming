@@ -1,29 +1,22 @@
 #include <stdio.h>
 #include "calculate.h"
 
-//#define testconst 5
-
 int main() {
-int number;
-int answer;
+  int number;
+  int answer;
+  printf("Hello, I will find for you a perfect number.\nPlease let me know where to start from?");
 
-//if (testconst == 5) {printf ("aaa");}
+  char cont = 'y';
 
+  while(cont == 'y') {
 
-printf("Hello, I will find for you a perfect number.\nPlease let me know where to start from?");
+    printf("\n\nPlease enter a positive integer\n");
+    scanf("%i", &number);
+    answer = calc(number);
+    printf("\nCongrats. We found your perfect number: %i\n", answer);
+    printf("continue? (y/n)");
+    scanf("%c", &cont);
+  }
 
-
-char cont = 'y';
-while(cont == 'y') {
-
-printf("\n\nPlease enter a positive integer\n");
-scanf("%i", &number);
-
-answer = calc(number);
-printf("\nCongrats. We found your perfect number: %i\n", answer);
-printf("continue? (y/n)");
-scanf("%c", &cont);
-
-}
   return 0;
 }
